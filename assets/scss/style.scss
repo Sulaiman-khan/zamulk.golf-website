@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+$primary: #00b355;
+$secondary: #000000;
+
+.green-bg {
+    background-color: $primary;
+}
+.green-text {
+    color: $primary;
+}
+.green-btn {
+    background-color: $primary;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        transition: 0.4s all;
+        z-index: -1;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        transition: 0.4s all;
+        z-index: -1;
+    }
+    &:hover {
+        color: $primary;
+        &::before {
+            width: 50%;
+        }
+        &::after {
+            width: 50%;
+        }
+    }
+}
+.light-btn {
+    background-color: #ffffff;
+    color: $primary;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $primary;
+        transition: 0.4s all;
+        z-index: -1;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $primary;
+        transition: 0.4s all;
+        z-index: -1;
+    }
+    &:hover {
+        color: #ffffff;
+        &::before {
+            width: 51%;
+        }
+        &::after {
+            width: 51%;
+        }
+    }
+}
+header {
+    position: fixed;
+    background-color: rgb(255 255 255 / 95%);
+    width: 90%;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: 0.4s all;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(155 155 155 / 18%);
+    border: 2px solid $primary;
+    .logo {
+        width: 100px;
+    }
+    nav {
+        li {
+            margin: 0 5px;
+            a {
+                color: $secondary !important;
+                transition: 0.4s all;
+                &:hover {
+                    background-color: $primary;
+                    border-radius: 5px;
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+.loginbtn {
+    color: #ffffff !important;
+    &:hover {
+        color: $primary !important;
+    }
+}
+.hero-sec {
+    height: 100vh;
+    background:
+        linear-gradient(90deg, #fdfffa 0%, rgba(255, 255, 255, 0) 100%),
+        url("../images/hero-bg.webp") no-repeat center center / cover;
+    .hero-text {
+        margin-top: 15rem;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+.heading {
+    p {
+        font-family: "Dancing Script", cursive;
+    }
+    h2 {
+        color: $primary;
+    }
+    a {
+        i {
+            transform: rotate(45deg);
+        }
+    }
+}
+.services {
+    .service-box {
+        border-radius: 10px;
+        overflow: hidden;
+        &:hover {
+            img {
+                filter: none;
+            }
+            .srv-txt {
+                bottom: 7%;
+            }
+        }
+        figure {
+            img {
+                height: 400px;
+                object-fit: cover;
+                filter: grayscale(1);
+                transition: 0.6s all;
+            }
+        }
+        .srv-txt {
+            z-index: 99;
+            bottom: 5%;
+            left: 50%;
+            background: linear-gradient(to bottom, #00b354, rgb(0 182 94 / 83%));
+            width: 90%;
+            transform: translate(-50%, 0%);
+            border-radius: 15px;
+            transition: 0.5s all;
+        }
+    }
+}
+.program-sec {
+    .program-box {
+        border: 1px solid rgb(203, 203, 203);
+        border-radius: 10px;
+        transition: 0.4s all;
+        p{
+            color: gray;
+        }
+        &:hover {
+            background-color: $primary;
+            .icon {
+                background-color: #ffffff;
+                color: $primary;
+            }
+            h4{
+                color: #ffffff;
+            }
+            p{
+                color: #ffffff;
+            }
+        }
+        .icon {
+            background-color: $primary;
+            border: 1px solid rgba(203, 203, 203, 0.685);
+            width: 80px;
+            border-radius: 10px;
+            color: #ffffff;
+            transition: 0.4s all;
+        }
+    }
+    .golf-ball {
+        img {
+            width: 100%;
+            animation: rotate 20s linear infinite;
+        }
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.online-coaching{
+    background: url(../images/bg.png) no-repeat center center / cover;
+    border-radius: 10px;
+}
+.car-sec {
+    .car-box {
+        border-radius: 10px;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $secondary;
+            opacity: 0.4;
+        }
+        a {
+            border-radius: 10px;
+            &:hover {
+                background-color: $primary !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+.mylisting {
+    .listing-box {
+        border: 1px solid rgb(222, 222, 222);
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            transition: 0.4s all;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+        figure {
+            overflow: hidden;
+        }
+        .list-text {
+            p {
+                font-size: 0.9rem;
+                color: gray;
+            }
+            .car-detail {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+.about-sec {
+    .experience {
+        letter-spacing: 8px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(-35%, -50%);
+        rotate: -90deg;
+        font-size: 4rem;
+        span {
+            letter-spacing: 15px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 2.5;
+        color: gray;
+        font-size: 0.9rem;
+        i {
+            color: $primary;
+            margin-right: 5px;
+        }
+    }
+}
+.chose-sec {
+    .chose-item {
+        .chose-box {
+            box-shadow: 0px 5px 12px rgb(211 211 211 / 25%);
+            border-radius: 10px;
+            padding: 2.5rem;
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+.blogs {
+    .blog-box {
+        img {
+            transition: 0.4s all;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+        figure {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}
+
+footer {
+    .newletter {
+        form {
+            input {
+                border-radius: 100px;
+                background-color: #ffffff86;
+                border: 1px solid #ffffff;
+                &::placeholder {
+                    color: #ffffffa1;
+                    font-size: 0.9rem;
+                }
+            }
+            button {
+                border-radius: 100px;
+                top: 50%;
+                right: 0%;
+                transform: translate(-9%, -50%);
+            }
+        }
+    }
+    .middle-footer {
+        .footer-box {
+            list-style-type: none;
+            img {
+                width: 150px;
+            }
+        }
+        .links {
+            i {
+                font-size: 0.7rem;
+                color: orangered;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.listing-search {
+    padding: 24rem 0rem 0rem 0rem;
+}
+.listing {
+    margin-top: -90px;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    .listing-box {
+        border: 1px solid rgb(222, 222, 222);
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            transition: 0.4s all;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+        figure {
+            overflow: hidden;
+        }
+        .list-text {
+            p {
+                font-size: 0.9rem;
+                color: gray;
+            }
+            .car-detail {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.listing-pagination {
+    .page-item {
+        .page-link {
+            border: 0;
+            margin: 0 10px;
+            width: 36px;
+            text-align: center;
+            color: $secondary;
+        }
+
+        &:nth-child(1) {
+            .page-link {
+                background-color: $primary;
+                color: #ffffff;
+                border-radius: 50px;
+            }
+        }
+        &:nth-last-child(1) {
+            .page-link {
+                background-color: $primary;
+                color: #ffffff;
+                border-radius: 50px;
+            }
+        }
+    }
+    .active {
+        background-color: $primary !important;
+        color: #ffffff !important;
+        border-radius: 50px;
+    }
+}
+
+.sell-car {
+    height: calc(100vh - 40px);
+    background: url(../images/car-2.png) no-repeat bottom / cover;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        // z-index: 2;
+        opacity: 0.5;
+    }
+    .sell-car-heading {
+        h1 {
+            font-size: 3rem;
+            span {
+                border-radius: 10px;
+            }
+        }
+        h4 {
+            width: max-content;
+            border-radius: 10px;
+        }
+    }
+    .bg-orange {
+        background-color: orangered;
+    }
+    .form-txt {
+        width: 400px;
+        border-radius: 10px 10px 0px 0px;
+        margin-left: 100px;
+    }
+}
+.sell-form {
+    background: url(../images/form-bg.png) no-repeat center / cover;
+    .form {
+        background-color: #ffffff96;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        input {
+            border: 1px solid $secondary;
+        }
+        textarea {
+            border: 1px solid $secondary;
+        }
+    }
+}
+
+.car-finance {
+    height: calc(100vh - 40px);
+    background: url(../images/car-finance-bg.png) no-repeat bottom / cover;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        // z-index: 2;
+        opacity: 0.5;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .sell-car-heading {
+        h1 {
+            font-size: 3rem;
+            span {
+                border-radius: 10px;
+            }
+        }
+        h4 {
+            width: max-content;
+            border-radius: 10px;
+        }
+    }
+
+    .form-txt {
+        width: 400px;
+        border-radius: 10px 10px 0px 0px;
+        margin-left: 100px;
+    }
+}
+.finance-items {
+    .finance-box {
+        border-radius: 10px;
+        .step {
+            width: 65px;
+            border-radius: 100px;
+        }
+    }
+}
+.bg-orange {
+    background-color: orangered;
+}

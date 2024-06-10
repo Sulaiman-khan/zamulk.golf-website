@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.green-bg {
+  background-color: #00b355;
+}
+
+.green-text {
+  color: #00b355;
+}
+
+.green-btn {
+  background-color: #00b355;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.4s all;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid;
+}
+.green-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.green-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.green-btn:hover {
+  color: #00b355;
+}
+.green-btn:hover::before {
+  width: 50%;
+}
+.green-btn:hover::after {
+  width: 50%;
+}
+
+.light-btn {
+  background-color: #ffffff;
+  color: #00b355;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.4s all;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid;
+}
+.light-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #00b355;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.light-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #00b355;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.light-btn:hover {
+  color: #ffffff;
+}
+.light-btn:hover::before {
+  width: 51%;
+}
+.light-btn:hover::after {
+  width: 51%;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 999;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: 0.4s all;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(155, 155, 155, 0.18);
+  border: 2px solid #00b355;
+}
+header .logo {
+  width: 100px;
+}
+header nav li {
+  margin: 0 5px;
+}
+header nav li a {
+  color: #000000 !important;
+  transition: 0.4s all;
+}
+header nav li a:hover {
+  background-color: #00b355;
+  border-radius: 5px;
+  color: #ffffff !important;
+}
+
+.sticky {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+
+.loginbtn {
+  color: #ffffff !important;
+}
+.loginbtn:hover {
+  color: #00b355 !important;
+}
+
+.hero-sec {
+  height: 100vh;
+  background: linear-gradient(90deg, #fdfffa 0%, rgba(255, 255, 255, 0) 100%), url("../images/hero-bg.webp") no-repeat center center/cover;
+}
+.hero-sec .hero-text {
+  margin-top: 15rem;
+}
+.hero-sec .hero-text h1 {
+  font-size: 3rem;
+}
+
+.heading p {
+  font-family: "Dancing Script", cursive;
+}
+.heading h2 {
+  color: #00b355;
+}
+.heading a i {
+  transform: rotate(45deg);
+}
+
+.services .service-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.services .service-box:hover img {
+  filter: none;
+}
+.services .service-box:hover .srv-txt {
+  bottom: 7%;
+}
+.services .service-box figure img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.6s all;
+}
+.services .service-box .srv-txt {
+  z-index: 99;
+  bottom: 5%;
+  left: 50%;
+  background: linear-gradient(to bottom, #00b354, rgba(0, 182, 94, 0.83));
+  width: 90%;
+  transform: translate(-50%, 0%);
+  border-radius: 15px;
+  transition: 0.5s all;
+}
+
+.program-sec .program-box {
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.program-sec .program-box p {
+  color: gray;
+}
+.program-sec .program-box:hover {
+  background-color: #00b355;
+}
+.program-sec .program-box:hover .icon {
+  background-color: #ffffff;
+  color: #00b355;
+}
+.program-sec .program-box:hover h4 {
+  color: #ffffff;
+}
+.program-sec .program-box:hover p {
+  color: #ffffff;
+}
+.program-sec .program-box .icon {
+  background-color: #00b355;
+  border: 1px solid rgba(203, 203, 203, 0.685);
+  width: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: 0.4s all;
+}
+.program-sec .golf-ball img {
+  width: 100%;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.online-coaching {
+  background: url(../images/bg.png) no-repeat center center/cover;
+  border-radius: 10px;
+}
+
+.car-sec .car-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.car-sec .car-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.4;
+}
+.car-sec .car-box a {
+  border-radius: 10px;
+}
+.car-sec .car-box a:hover {
+  background-color: #00b355 !important;
+  color: #ffffff !important;
+}
+
+.mylisting .listing-box {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mylisting .listing-box img {
+  transition: 0.4s all;
+}
+.mylisting .listing-box:hover img {
+  transform: scale(1.2);
+}
+.mylisting .listing-box figure {
+  overflow: hidden;
+}
+.mylisting .listing-box .list-text p {
+  font-size: 0.9rem;
+  color: gray;
+}
+.mylisting .listing-box .list-text .car-detail p {
+  font-size: 0.8rem;
+}
+
+.about-sec .experience {
+  letter-spacing: 8px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-35%, -50%);
+  rotate: -90deg;
+  font-size: 4rem;
+}
+.about-sec .experience span {
+  letter-spacing: 15px;
+}
+.about-sec ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2.5;
+  color: gray;
+  font-size: 0.9rem;
+}
+.about-sec ul i {
+  color: #00b355;
+  margin-right: 5px;
+}
+
+.chose-sec .chose-item .chose-box {
+  box-shadow: 0px 5px 12px rgba(211, 211, 211, 0.25);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+.chose-sec .chose-item .chose-box p {
+  font-size: 0.9rem;
+}
+
+.blogs .blog-box img {
+  transition: 0.4s all;
+}
+.blogs .blog-box:hover img {
+  transform: scale(1.2);
+}
+.blogs .blog-box figure {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+footer .newletter form input {
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.5254901961);
+  border: 1px solid #ffffff;
+}
+footer .newletter form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.631372549);
+  font-size: 0.9rem;
+}
+footer .newletter form input::placeholder {
+  color: rgba(255, 255, 255, 0.631372549);
+  font-size: 0.9rem;
+}
+footer .newletter form button {
+  border-radius: 100px;
+  top: 50%;
+  right: 0%;
+  transform: translate(-9%, -50%);
+}
+footer .middle-footer .footer-box {
+  list-style-type: none;
+}
+footer .middle-footer .footer-box img {
+  width: 150px;
+}
+footer .middle-footer .links i {
+  font-size: 0.7rem;
+  color: orangered;
+  margin-right: 5px;
+}
+
+.listing-search {
+  padding: 24rem 0rem 0rem 0rem;
+}
+
+.listing {
+  margin-top: -90px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+}
+.listing .listing-box {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.listing .listing-box img {
+  transition: 0.4s all;
+}
+.listing .listing-box:hover img {
+  transform: scale(1.2);
+}
+.listing .listing-box figure {
+  overflow: hidden;
+}
+.listing .listing-box .list-text p {
+  font-size: 0.9rem;
+  color: gray;
+}
+.listing .listing-box .list-text .car-detail p {
+  font-size: 0.8rem;
+}
+
+.listing-pagination .page-item .page-link {
+  border: 0;
+  margin: 0 10px;
+  width: 36px;
+  text-align: center;
+  color: #000000;
+}
+.listing-pagination .page-item:nth-child(1) .page-link {
+  background-color: #00b355;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.listing-pagination .page-item:nth-last-child(1) .page-link {
+  background-color: #00b355;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.listing-pagination .active {
+  background-color: #00b355 !important;
+  color: #ffffff !important;
+  border-radius: 50px;
+}
+
+.sell-car {
+  height: calc(100vh - 40px);
+  background: url(../images/car-2.png) no-repeat bottom/cover;
+  overflow: hidden;
+  position: relative;
+}
+.sell-car::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+.sell-car .sell-car-heading h1 {
+  font-size: 3rem;
+}
+.sell-car .sell-car-heading h1 span {
+  border-radius: 10px;
+}
+.sell-car .sell-car-heading h4 {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+}
+.sell-car .bg-orange {
+  background-color: orangered;
+}
+.sell-car .form-txt {
+  width: 400px;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 100px;
+}
+
+.sell-form {
+  background: url(../images/form-bg.png) no-repeat center/cover;
+}
+.sell-form .form {
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.sell-form .form input {
+  border: 1px solid #000000;
+}
+.sell-form .form textarea {
+  border: 1px solid #000000;
+}
+
+.car-finance {
+  height: calc(100vh - 40px);
+  background: url(../images/car-finance-bg.png) no-repeat bottom/cover;
+  overflow: hidden;
+  position: relative;
+}
+.car-finance::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  border-radius: 0px 0px 20px 20px;
+}
+.car-finance .sell-car-heading h1 {
+  font-size: 3rem;
+}
+.car-finance .sell-car-heading h1 span {
+  border-radius: 10px;
+}
+.car-finance .sell-car-heading h4 {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+}
+.car-finance .form-txt {
+  width: 400px;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 100px;
+}
+
+.finance-items .finance-box {
+  border-radius: 10px;
+}
+.finance-items .finance-box .step {
+  width: 65px;
+  border-radius: 100px;
+}
+
+.bg-orange {
+  background-color: orangered;
+}/*# sourceMappingURL=style.css.map */
