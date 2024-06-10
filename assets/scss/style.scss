@@ -54,10 +54,10 @@ $secondary: #000000;
     &:hover {
         color: $primary;
         &::before {
-            width: 50%;
+            width: 52%;
         }
         &::after {
-            width: 50%;
+            width: 53%;
         }
     }
 }
@@ -98,10 +98,10 @@ $secondary: #000000;
     &:hover {
         color: #ffffff;
         &::before {
-            width: 51%;
+            width: 52%;
         }
         &::after {
-            width: 51%;
+            width: 52%;
         }
     }
 }
@@ -214,7 +214,7 @@ header {
         border: 1px solid rgb(203, 203, 203);
         border-radius: 10px;
         transition: 0.4s all;
-        p{
+        p {
             color: gray;
         }
         &:hover {
@@ -223,10 +223,10 @@ header {
                 background-color: #ffffff;
                 color: $primary;
             }
-            h4{
+            h4 {
                 color: #ffffff;
             }
-            p{
+            p {
                 color: #ffffff;
             }
         }
@@ -255,319 +255,153 @@ header {
     }
 }
 
-.online-coaching{
+.online-coaching {
     background: url(../images/bg.png) no-repeat center center / cover;
     border-radius: 10px;
 }
-.car-sec {
-    .car-box {
-        border-radius: 10px;
-        overflow: hidden;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $secondary;
-            opacity: 0.4;
-        }
-        a {
-            border-radius: 10px;
-            &:hover {
-                background-color: $primary !important;
-                color: #ffffff !important;
-            }
-        }
-    }
+.page-title {
+    background: url(../images/title.jpg) no-repeat center / cover;
+    padding: 14rem 0rem 4rem 0rem;
 }
-.mylisting {
-    .listing-box {
-        border: 1px solid rgb(222, 222, 222);
-        border-radius: 10px;
-        overflow: hidden;
-        img {
-            transition: 0.4s all;
-        }
-        &:hover {
-            img {
-                transform: scale(1.2);
-            }
-        }
-        figure {
-            overflow: hidden;
-        }
-        .list-text {
-            p {
-                font-size: 0.9rem;
-                color: gray;
-            }
-            .car-detail {
-                p {
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
-}
-.about-sec {
-    .experience {
-        letter-spacing: 8px;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        transform: translate(-35%, -50%);
-        rotate: -90deg;
-        font-size: 4rem;
-        span {
-            letter-spacing: 15px;
-        }
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        line-height: 2.5;
-        color: gray;
-        font-size: 0.9rem;
-        i {
-            color: $primary;
-            margin-right: 5px;
-        }
-    }
-}
-.chose-sec {
-    .chose-item {
-        .chose-box {
-            box-shadow: 0px 5px 12px rgb(211 211 211 / 25%);
-            border-radius: 10px;
-            padding: 2.5rem;
-            p {
+.newletter {
+    form {
+        input {
+            border-radius: 100px;
+            background-color: #ffffff86;
+            border: 1px solid #ffffff;
+            &::placeholder {
+                color: #ffffffa1;
                 font-size: 0.9rem;
             }
         }
-    }
-}
-.blogs {
-    .blog-box {
-        img {
-            transition: 0.4s all;
-        }
-        &:hover {
-            img {
-                transform: scale(1.2);
-            }
-        }
-        figure {
-            border-radius: 10px;
-            overflow: hidden;
+        button {
+            border-radius: 100px;
+            top: 50%;
+            right: 0%;
+            transform: translate(-9%, -50%);
         }
     }
 }
-
 footer {
-    .newletter {
-        form {
-            input {
-                border-radius: 100px;
-                background-color: #ffffff86;
-                border: 1px solid #ffffff;
-                &::placeholder {
-                    color: #ffffffa1;
-                    font-size: 0.9rem;
-                }
-            }
-            button {
-                border-radius: 100px;
-                top: 50%;
-                right: 0%;
-                transform: translate(-9%, -50%);
-            }
-        }
-    }
     .middle-footer {
-        .footer-box {
+        ul {
             list-style-type: none;
+        }
+        .footer-box {
             img {
                 width: 150px;
             }
         }
         .links {
-            i {
-                font-size: 0.7rem;
-                color: orangered;
-                margin-right: 5px;
-            }
-        }
-    }
-}
-
-.listing-search {
-    padding: 24rem 0rem 0rem 0rem;
-}
-.listing {
-    margin-top: -90px;
-    background-color: #ffffff;
-    border-radius: 20px 20px 0px 0px;
-    position: relative;
-    .listing-box {
-        border: 1px solid rgb(222, 222, 222);
-        border-radius: 10px;
-        overflow: hidden;
-        img {
-            transition: 0.4s all;
-        }
-        &:hover {
-            img {
-                transform: scale(1.2);
-            }
-        }
-        figure {
-            overflow: hidden;
-        }
-        .list-text {
-            p {
-                font-size: 0.9rem;
-                color: gray;
-            }
-            .car-detail {
-                p {
-                    font-size: 0.8rem;
+            a {
+                &:hover {
+                    color: $primary !important;
+                    i {
+                        margin-right: 10px;
+                    }
                 }
             }
+            i {
+                font-size: 0.7rem;
+                color: rgb(0, 0, 0);
+                margin-right: 5px;
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+.testmonial {
+    .swiper {
+        max-width: 700px;
+        margin: 0 auto;
+        border: 1px solid #80808042;
+        border-radius: 10px;
+    }
+}
+.contact-detail {
+    .contact-box {
+        border: 1px solid rgb(203, 203, 203);
+        border-radius: 10px;
+        transition: 0.4s all;
+        p {
+            color: gray;
+        }
+        &:hover {
+            background-color: $primary;
+            .icon {
+                background-color: #ffffff;
+                color: $primary;
+            }
+            h4 {
+                color: #ffffff;
+            }
+            p {
+                color: #ffffff;
+            }
+        }
+        .icon {
+            background-color: $primary;
+            border: 1px solid rgba(203, 203, 203, 0.685);
+            width: 80px;
+            border-radius: 10px;
+            color: #ffffff;
+            transition: 0.4s all;
+        }
+    }
+}
+.form-sec {
+    box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.423);
+    border-radius: 20px;
+    margin-top: -100px !important;
+    width: 80% !important;
+    margin: 0 auto;
+    input {
+        transition: 0.4s all;
+        &:focus {
+            box-shadow: 0px 4px 10px #00b3544f;
+            border-color: $primary;
         }
     }
 }
 
-.listing-pagination {
-    .page-item {
-        .page-link {
-            border: 0;
-            margin: 0 10px;
-            width: 36px;
-            text-align: center;
+.pricing {
+    #pills-tab {
+        width: max-content;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        button {
             color: $secondary;
+            transition: 0.4s all;
         }
-
-        &:nth-child(1) {
-            .page-link {
-                background-color: $primary;
-                color: #ffffff;
-                border-radius: 50px;
+        .active {
+            background-color: $primary;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+    .pricing__card {
+        background-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding-bottom: 30px;
+        .pricing__card-head {
+            text-align: center;
+            background-color: $primary;
+            border-radius: 5px;
+            margin-bottom: 35px;
+        }
+        ul{
+            list-style: none;
+           li{
+            font-weight: 600;
+            line-height: 2.5;
+            i{
+                color: $primary;
+                font-size: 17px;
+                margin-right: 5px;
             }
-        }
-        &:nth-last-child(1) {
-            .page-link {
-                background-color: $primary;
-                color: #ffffff;
-                border-radius: 50px;
-            }
+           }
         }
     }
-    .active {
-        background-color: $primary !important;
-        color: #ffffff !important;
-        border-radius: 50px;
-    }
-}
-
-.sell-car {
-    height: calc(100vh - 40px);
-    background: url(../images/car-2.png) no-repeat bottom / cover;
-    overflow: hidden;
-    position: relative;
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        // z-index: 2;
-        opacity: 0.5;
-    }
-    .sell-car-heading {
-        h1 {
-            font-size: 3rem;
-            span {
-                border-radius: 10px;
-            }
-        }
-        h4 {
-            width: max-content;
-            border-radius: 10px;
-        }
-    }
-    .bg-orange {
-        background-color: orangered;
-    }
-    .form-txt {
-        width: 400px;
-        border-radius: 10px 10px 0px 0px;
-        margin-left: 100px;
-    }
-}
-.sell-form {
-    background: url(../images/form-bg.png) no-repeat center / cover;
-    .form {
-        background-color: #ffffff96;
-        backdrop-filter: blur(5px);
-        border-radius: 10px;
-        input {
-            border: 1px solid $secondary;
-        }
-        textarea {
-            border: 1px solid $secondary;
-        }
-    }
-}
-
-.car-finance {
-    height: calc(100vh - 40px);
-    background: url(../images/car-finance-bg.png) no-repeat bottom / cover;
-    overflow: hidden;
-    position: relative;
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        // z-index: 2;
-        opacity: 0.5;
-        border-radius: 0px 0px 20px 20px;
-    }
-    .sell-car-heading {
-        h1 {
-            font-size: 3rem;
-            span {
-                border-radius: 10px;
-            }
-        }
-        h4 {
-            width: max-content;
-            border-radius: 10px;
-        }
-    }
-
-    .form-txt {
-        width: 400px;
-        border-radius: 10px 10px 0px 0px;
-        margin-left: 100px;
-    }
-}
-.finance-items {
-    .finance-box {
-        border-radius: 10px;
-        .step {
-            width: 65px;
-            border-radius: 100px;
-        }
-    }
-}
-.bg-orange {
-    background-color: orangered;
 }

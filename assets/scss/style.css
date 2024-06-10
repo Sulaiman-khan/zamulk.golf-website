@@ -57,10 +57,10 @@ body {
   color: #00b355;
 }
 .green-btn:hover::before {
-  width: 50%;
+  width: 52%;
 }
 .green-btn:hover::after {
-  width: 50%;
+  width: 53%;
 }
 
 .light-btn {
@@ -102,10 +102,10 @@ body {
   color: #ffffff;
 }
 .light-btn:hover::before {
-  width: 51%;
+  width: 52%;
 }
 .light-btn:hover::after {
-  width: 51%;
+  width: 52%;
 }
 
 header {
@@ -253,274 +253,139 @@ header nav li a:hover {
   border-radius: 10px;
 }
 
-.car-sec .car-box {
-  border-radius: 10px;
-  overflow: hidden;
-}
-.car-sec .car-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.4;
-}
-.car-sec .car-box a {
-  border-radius: 10px;
-}
-.car-sec .car-box a:hover {
-  background-color: #00b355 !important;
-  color: #ffffff !important;
+.page-title {
+  background: url(../images/title.jpg) no-repeat center/cover;
+  padding: 14rem 0rem 4rem 0rem;
 }
 
-.mylisting .listing-box {
-  border: 1px solid rgb(222, 222, 222);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.mylisting .listing-box img {
-  transition: 0.4s all;
-}
-.mylisting .listing-box:hover img {
-  transform: scale(1.2);
-}
-.mylisting .listing-box figure {
-  overflow: hidden;
-}
-.mylisting .listing-box .list-text p {
-  font-size: 0.9rem;
-  color: gray;
-}
-.mylisting .listing-box .list-text .car-detail p {
-  font-size: 0.8rem;
-}
-
-.about-sec .experience {
-  letter-spacing: 8px;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(-35%, -50%);
-  rotate: -90deg;
-  font-size: 4rem;
-}
-.about-sec .experience span {
-  letter-spacing: 15px;
-}
-.about-sec ul {
-  list-style-type: none;
-  padding: 0;
-  line-height: 2.5;
-  color: gray;
-  font-size: 0.9rem;
-}
-.about-sec ul i {
-  color: #00b355;
-  margin-right: 5px;
-}
-
-.chose-sec .chose-item .chose-box {
-  box-shadow: 0px 5px 12px rgba(211, 211, 211, 0.25);
-  border-radius: 10px;
-  padding: 2.5rem;
-}
-.chose-sec .chose-item .chose-box p {
-  font-size: 0.9rem;
-}
-
-.blogs .blog-box img {
-  transition: 0.4s all;
-}
-.blogs .blog-box:hover img {
-  transform: scale(1.2);
-}
-.blogs .blog-box figure {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-footer .newletter form input {
+.newletter form input {
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.5254901961);
   border: 1px solid #ffffff;
 }
-footer .newletter form input::-moz-placeholder {
+.newletter form input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.631372549);
   font-size: 0.9rem;
 }
-footer .newletter form input::placeholder {
+.newletter form input::placeholder {
   color: rgba(255, 255, 255, 0.631372549);
   font-size: 0.9rem;
 }
-footer .newletter form button {
+.newletter form button {
   border-radius: 100px;
   top: 50%;
   right: 0%;
   transform: translate(-9%, -50%);
 }
-footer .middle-footer .footer-box {
+
+footer .middle-footer ul {
   list-style-type: none;
 }
 footer .middle-footer .footer-box img {
   width: 150px;
 }
+footer .middle-footer .links a:hover {
+  color: #00b355 !important;
+}
+footer .middle-footer .links a:hover i {
+  margin-right: 10px;
+}
 footer .middle-footer .links i {
   font-size: 0.7rem;
-  color: orangered;
+  color: rgb(0, 0, 0);
   margin-right: 5px;
+  transition: 0.3s all;
 }
 
-.listing-search {
-  padding: 24rem 0rem 0rem 0rem;
-}
-
-.listing {
-  margin-top: -90px;
-  background-color: #ffffff;
-  border-radius: 20px 20px 0px 0px;
-  position: relative;
-}
-.listing .listing-box {
-  border: 1px solid rgb(222, 222, 222);
+.testmonial .swiper {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid rgba(128, 128, 128, 0.2588235294);
   border-radius: 10px;
-  overflow: hidden;
 }
-.listing .listing-box img {
+
+.contact-detail .contact-box {
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 10px;
   transition: 0.4s all;
 }
-.listing .listing-box:hover img {
-  transform: scale(1.2);
-}
-.listing .listing-box figure {
-  overflow: hidden;
-}
-.listing .listing-box .list-text p {
-  font-size: 0.9rem;
+.contact-detail .contact-box p {
   color: gray;
 }
-.listing .listing-box .list-text .car-detail p {
-  font-size: 0.8rem;
+.contact-detail .contact-box:hover {
+  background-color: #00b355;
+}
+.contact-detail .contact-box:hover .icon {
+  background-color: #ffffff;
+  color: #00b355;
+}
+.contact-detail .contact-box:hover h4 {
+  color: #ffffff;
+}
+.contact-detail .contact-box:hover p {
+  color: #ffffff;
+}
+.contact-detail .contact-box .icon {
+  background-color: #00b355;
+  border: 1px solid rgba(203, 203, 203, 0.685);
+  width: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: 0.4s all;
 }
 
-.listing-pagination .page-item .page-link {
-  border: 0;
-  margin: 0 10px;
-  width: 36px;
-  text-align: center;
+.form-sec {
+  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.423);
+  border-radius: 20px;
+  margin-top: -100px !important;
+  width: 80% !important;
+  margin: 0 auto;
+}
+.form-sec input {
+  transition: 0.4s all;
+}
+.form-sec input:focus {
+  box-shadow: 0px 4px 10px rgba(0, 179, 84, 0.3098039216);
+  border-color: #00b355;
+}
+
+.pricing #pills-tab {
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid #00b355;
+  border-radius: 5px;
+}
+.pricing #pills-tab button {
   color: #000000;
+  transition: 0.4s all;
 }
-.listing-pagination .page-item:nth-child(1) .page-link {
+.pricing #pills-tab .active {
   background-color: #00b355;
   color: #ffffff;
-  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
-.listing-pagination .page-item:nth-last-child(1) .page-link {
+.pricing .pricing__card {
+  background-color: #ffffff;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+.pricing .pricing__card .pricing__card-head {
+  text-align: center;
   background-color: #00b355;
-  color: #ffffff;
-  border-radius: 50px;
+  border-radius: 5px;
+  margin-bottom: 35px;
 }
-.listing-pagination .active {
-  background-color: #00b355 !important;
-  color: #ffffff !important;
-  border-radius: 50px;
+.pricing .pricing__card ul {
+  list-style: none;
 }
-
-.sell-car {
-  height: calc(100vh - 40px);
-  background: url(../images/car-2.png) no-repeat bottom/cover;
-  overflow: hidden;
-  position: relative;
+.pricing .pricing__card ul li {
+  font-weight: 600;
+  line-height: 2.5;
 }
-.sell-car::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
-}
-.sell-car .sell-car-heading h1 {
-  font-size: 3rem;
-}
-.sell-car .sell-car-heading h1 span {
-  border-radius: 10px;
-}
-.sell-car .sell-car-heading h4 {
-  width: -moz-max-content;
-  width: max-content;
-  border-radius: 10px;
-}
-.sell-car .bg-orange {
-  background-color: orangered;
-}
-.sell-car .form-txt {
-  width: 400px;
-  border-radius: 10px 10px 0px 0px;
-  margin-left: 100px;
-}
-
-.sell-form {
-  background: url(../images/form-bg.png) no-repeat center/cover;
-}
-.sell-form .form {
-  background-color: rgba(255, 255, 255, 0.5882352941);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 10px;
-}
-.sell-form .form input {
-  border: 1px solid #000000;
-}
-.sell-form .form textarea {
-  border: 1px solid #000000;
-}
-
-.car-finance {
-  height: calc(100vh - 40px);
-  background: url(../images/car-finance-bg.png) no-repeat bottom/cover;
-  overflow: hidden;
-  position: relative;
-}
-.car-finance::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
-  border-radius: 0px 0px 20px 20px;
-}
-.car-finance .sell-car-heading h1 {
-  font-size: 3rem;
-}
-.car-finance .sell-car-heading h1 span {
-  border-radius: 10px;
-}
-.car-finance .sell-car-heading h4 {
-  width: -moz-max-content;
-  width: max-content;
-  border-radius: 10px;
-}
-.car-finance .form-txt {
-  width: 400px;
-  border-radius: 10px 10px 0px 0px;
-  margin-left: 100px;
-}
-
-.finance-items .finance-box {
-  border-radius: 10px;
-}
-.finance-items .finance-box .step {
-  width: 65px;
-  border-radius: 100px;
-}
-
-.bg-orange {
-  background-color: orangered;
+.pricing .pricing__card ul li i {
+  color: #00b355;
+  font-size: 17px;
+  margin-right: 5px;
 }/*# sourceMappingURL=style.css.map */
