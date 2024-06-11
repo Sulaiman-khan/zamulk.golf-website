@@ -405,3 +405,62 @@ footer {
         }
     }
 }
+    .ser-img{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+.junior-camp{
+    background: url(../images/junior-camp.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    .ser-text{
+        background-color: #00000087;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+}
+.summer-camp{
+    background: url(../images/summer-camp.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    .ser-text{
+        background-color: #00000087;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+}
+.fetr-box{
+    background-color: #eeeeee54;
+    border-radius: 10px;
+    .icon{
+        width: 70px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.ceo{
+    .ceo-img{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+.story{
+    .story-box{
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+        .story-img{
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                transition: 0.4s all;
+            }
+
+        }
+    }
+}

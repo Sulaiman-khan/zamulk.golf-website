@@ -388,4 +388,61 @@ footer .middle-footer .links i {
   color: #00b355;
   font-size: 17px;
   margin-right: 5px;
+}
+
+.ser-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.junior-camp {
+  background: url(../images/junior-camp.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.junior-camp .ser-text {
+  background-color: rgba(0, 0, 0, 0.5294117647);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.summer-camp {
+  background: url(../images/summer-camp.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.summer-camp .ser-text {
+  background-color: rgba(0, 0, 0, 0.5294117647);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.fetr-box {
+  background-color: rgba(238, 238, 238, 0.3294117647);
+  border-radius: 10px;
+}
+.fetr-box .icon {
+  width: 70px;
+  margin: 0 auto;
+}
+.fetr-box .icon img {
+  width: 100%;
+}
+
+.ceo .ceo-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.story .story-box:hover img {
+  transform: scale(1.2);
+}
+.story .story-box .story-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.story .story-box .story-img img {
+  transition: 0.4s all;
 }/*# sourceMappingURL=style.css.map */
