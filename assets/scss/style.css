@@ -445,4 +445,26 @@ footer .middle-footer .links i {
 }
 .story .story-box .story-img img {
   transition: 0.4s all;
+}
+
+.certificate .certificate-box:nth-child(2) {
+  background-color: rgb(234, 234, 234);
+}
+.certificate .form-sec {
+  margin-top: 0 !important;
+  background: url(../images/services-2.jpg) no-repeat center/cover;
+  border-radius: 0;
+}
+.certificate .form-sec form {
+  background: rgba(0, 0, 0, 0.3294117647);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+}
+
+.golf-designing .service-box figure img {
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: none;
+  transition: 0.6s all;
 }/*# sourceMappingURL=style.css.map */
