@@ -240,6 +240,8 @@ header {
         }
     }
     .golf-ball {
+        width: 75%;
+        margin: 0 auto;
         img {
             width: 100%;
             animation: rotate 20s linear infinite;

@@ -235,6 +235,10 @@ header nav li a:hover {
   color: #ffffff;
   transition: 0.4s all;
 }
+.program-sec .golf-ball {
+  width: 75%;
+  margin: 0 auto;
+}
 .program-sec .golf-ball img {
   width: 100%;
   animation: rotate 20s linear infinite;
