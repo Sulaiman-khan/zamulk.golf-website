@@ -124,7 +124,7 @@ header {
   border: 2px solid #00b355;
 }
 header .logo {
-  width: 130px;
+  width: 100px;
 }
 header nav li {
   margin: 0 5px;
@@ -137,6 +137,10 @@ header nav li a:hover {
   background-color: #00b355;
   border-radius: 5px;
   color: #ffffff !important;
+}
+
+.border-radius {
+  border-radius: 10px;
 }
 
 .sticky {
@@ -235,10 +239,6 @@ header nav li a:hover {
   color: #ffffff;
   transition: 0.4s all;
 }
-.program-sec .golf-ball {
-  width: 75%;
-  margin: 0 auto;
-}
 .program-sec .golf-ball img {
   width: 100%;
   animation: rotate 20s linear infinite;
@@ -252,6 +252,38 @@ header nav li a:hover {
     transform: rotate(360deg);
   }
 }
+.watermark-right {
+  position: relative;
+}
+.watermark-right::before {
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 55%;
+  right: 0%;
+  bottom: 0%;
+  transform: translate(0%, 0%);
+  background: url(../images/logo.jpg) no-repeat center center/100%;
+  background-attachment: fixed;
+  opacity: 0.2;
+}
+
+.watermark-left {
+  position: relative;
+}
+.watermark-left::before {
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 55%;
+  left: 0%;
+  bottom: 0;
+  transform: translate(0%, 0%);
+  background: url(../images/logo.jpg) no-repeat center center/100%;
+  background-attachment: fixed;
+  opacity: 0.2;
+}
+
 .online-coaching {
   background: url(../images/bg.png) no-repeat center center/cover;
   border-radius: 10px;
