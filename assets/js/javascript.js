@@ -8,7 +8,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+var swiper = new Swiper(".myCity", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoplay:true,
+  loop:true,
+});
 
 
 

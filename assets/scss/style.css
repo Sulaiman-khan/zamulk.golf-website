@@ -132,6 +132,7 @@ header nav li {
 header nav li a {
   color: #000000 !important;
   transition: 0.4s all;
+  font-size: 0.9rem;
 }
 header nav li a:hover {
   background-color: #00b355;
@@ -503,4 +504,35 @@ footer .middle-footer .links i {
   object-fit: cover;
   filter: none;
   transition: 0.6s all;
+}
+
+.city-club .swiper-slide {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.city-club .swiper-slide:hover img {
+  transform: scale(1.2);
+}
+.city-club .swiper-slide img {
+  transition: 0.4s all;
+}
+
+@media (min-width: 320px) and (max-width: 989px) {
+  .program-sec .golf-ball {
+    text-align: center;
+  }
+  .program-sec .golf-ball img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 990px) and (max-width: 1366px) {
+  header {
+    width: 100%;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
