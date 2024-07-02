@@ -8,11 +8,38 @@ window.addEventListener('scroll', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var pricingCardHeads = document.querySelectorAll('.pricing__card-head');
+  pricingCardHeads.forEach(function(head) {
+      head.addEventListener('click', function() {
+          var pricingCardBody = head.nextElementSibling;
+          if (pricingCardBody.style.display === 'none' || pricingCardBody.style.display === '') {
+              pricingCardBody.style.display = 'block';
+          } else {
+              pricingCardBody.style.display = 'none';
+          }
+      });
+  });
+});
+
+
 var swiper = new Swiper(".myCity", {
-  slidesPerView: 4,
-  spaceBetween: 30,
   autoplay:true,
   loop:true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
 });
 
 
