@@ -211,6 +211,10 @@ header nav li a:hover {
   transition: 0.5s all;
 }
 
+.myBrochure {
+  border-radius: 10px;
+}
+
 .program-sec {
   position: relative;
 }

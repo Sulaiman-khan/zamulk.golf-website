@@ -52,3 +52,13 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
 });
+
+
+var swiper = new Swiper(".myBrochure", {
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
