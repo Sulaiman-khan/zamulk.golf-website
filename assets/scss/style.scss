@@ -413,6 +413,7 @@ footer {
 }
 
 .pricing {
+    background: url(../images/pricing-bg.jpg) no-repeat top / cover;
     #pills-tab {
         width: max-content;
         border: 1px solid $primary;
@@ -429,36 +430,8 @@ footer {
         }
     }
     .pricing__card {
-        background-color: #ffffff;
-        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
-        border-radius: 5px;
-        padding-bottom: 30px;
-        .pricing__card-head {
-            text-align: center;
-            background-color: $primary;
-            border-radius: 5px;
-            margin-bottom: 35px;
-            cursor: pointer;
-            transition: 0.3s all;
-            &:hover{
-                background-color: $secondary;
-            }
-        }
-        ul{
-            list-style: none;
-           li{
-            font-weight: 600;
-            line-height: 2.5;
-            i{
-                color: $primary;
-                font-size: 17px;
-                margin-right: 5px;
-            }
-           }
-        }
-        .pricing__card-body{
-            display: none;
-            transition: 0.4s all;
+        .package-body{
+            border-radius: 30px;
         }
     }
 }
