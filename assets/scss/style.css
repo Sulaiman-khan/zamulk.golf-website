@@ -424,7 +424,19 @@ footer .middle-footer .links i {
   letter-spacing: 2px;
 }
 .pricing .pricing__card .package-body {
+  position: relative;
   border-radius: 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8274509804), rgba(194, 225, 255, 0.8078431373));
+}
+.pricing .pricing__card .package-body h3 {
+  border-radius: 20px;
+}
+.pricing .pricing__card .package-body .package-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .ser-img {
@@ -566,6 +578,9 @@ footer .middle-footer .links i {
   .program-sec .golf-ball img {
     width: 50%;
     margin: 0 auto;
+  }
+  .package-bottom {
+    position: relative !important;
   }
 }
 @media (min-width: 990px) and (max-width: 1366px) {

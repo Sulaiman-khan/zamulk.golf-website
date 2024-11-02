@@ -431,7 +431,19 @@ footer {
     }
     .pricing__card {
         .package-body{
+            position: relative;
             border-radius: 30px;
+            background: linear-gradient(to right, #ffffffd3, #c2e1ffce);
+            h3{
+                border-radius: 20px;
+            }
+            .package-bottom{
+                position: absolute;
+                width: 100%;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
         }
     }
 }
@@ -585,6 +597,9 @@ footer {
             margin: 0 auto;
         }
     } 
+    .package-bottom{
+        position: relative !important;
+    }
 }
 @media(min-width:990px) and (max-width:1366px){
     header{
